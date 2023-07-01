@@ -1,5 +1,6 @@
 var submitt = document.getElementById("submit")
 var dele  = document.getElementById("del")
+var editt = document.getElementById("edit")
 
 
 submitt.addEventListener("click", (e) =>{
@@ -24,6 +25,10 @@ submitt.addEventListener("click", (e) =>{
     })
     
     
+})
+
+editt.addEventListener("click", ()=>{
+    document.getElementById("email").value=""
 })
 
 
