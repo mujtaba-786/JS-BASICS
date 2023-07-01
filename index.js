@@ -1,11 +1,20 @@
-const name = document.getElementById("name")
-const email = document.getElementById("email")
-const phone = document.getElementById("phone")
-const submit = document.getElementById("submit");
+var name = document.getElementById("name")
+var email = document.getElementById("email")
+var phone = document.getElementById("phone")
+var submit = document.getElementById("submit"); 
+
+var count=0
+
+var obj = JSON.stringify(obj)
 
 submit.addEventListener("click", (e) =>{
-    localStorage.setItem("Name",name.value),
-    localStorage.setItem("Email",email.value),
-    localStorage.setItem("Phone",phone.value),
-    alert("Form Submitted")
+    count+=1
+    var a = document.getElementById("name").value
+    var b = document.getElementById("email").value
+    var c = document.getElementById("phone").value
+    localStorage.setItem(`name${count}`,a)
+    localStorage.setItem(`email${count}`,b)
+    localStorage.setItem(`phone${count}`,c)
+    //console.log(name)
+    
 })
