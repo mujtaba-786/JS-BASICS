@@ -2,65 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YAV</title>
-    <style>
-        body {
-            justify-content: center;
-            text-align: center;
-            background-image: url("image.avif");
-            padding-left: 400px;
-            padding-right: 400px;
-            
-        }
-        .container{
-            padding-bottom: 100px;
-            padding-top: 70px;
-            background-color: greenyellow;
-            color: black;
-
-        }
-        .submit{
-            background-color: aqua;
-        }
-        .btn{
-            align-items: end;
-        }
-       
-            
-        
-    </style>
+    <title>Expense Tracker</title>
 </head>
 <body>
     <div class="container">
-        <form action="#">
-            <h1 s>Book a call</h1>
-            <h3>Book a call slot and our representative will call you within 1hr of selected time</h3>
-            <h2>Name:</h2>
-           
-                <input type="text" id="name" size="60" placeholder="Ex.  Mohit Sharma" style="text-align: center;" required>
-            
-            <h2>Email:</h2>
-            
-            <input type="text" id="email" size="60" placeholder="Ex. mohitsharma@gmail.com" style="text-align: center;" required>
-          
-            <h2>Phone:</h2>
-           
-            <input type="text" id="phone" size="60" placeholder="Ex.  990078XXXX" style="text-align: center;" required>
-            
-            <h2>Time for call:</h2>
-            <input type="date" size="60">
-            <input type="time" size="60">
-            <br></br>
-            
-            <input type="submit" id="submit" value="GET A CALL">
-            
-            
-        </form>
-        <button id="del">Delete the information</button>
-        <button id="edit">Edit</button>
+        <label for="exp" class="Exp">Expense Amount</label>
+        <input type="number" class="Exp" id="exp">
+
+        <label for="descr" class="Descr">Description</label>
+        <input type="text" class="Descr" id="descr">
+
+        <label for="categ" class="Categ">Choose Category</label>
+        <select class="Categ" aria-label="Default select example" id="categ">
+            <option selected>Open this select menu</option>
+            <option value="1">Movie</option>
+            <option value="2">Travel</option>
+            <option value="3">Rent</option>
+        </select>
+
+        <button id="btn">Add Expense</button>
+        <div id="container2"></div>
     </div>
+
     <script src="index.js"></script>
 </body>
 </html>
